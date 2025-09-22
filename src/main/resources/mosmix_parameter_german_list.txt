@@ -1,0 +1,43 @@
+name,original_name,description,unit_type,unit,constraints
+cloud_base_convective,h_bsc,Wolkenbasis von konvektiven Wolken,length_medium,m,>=0
+cloud_cover_above_7km,nh,Hohe Wolkenbedeckung (>7 km),fraction,%,>=0,<=100
+cloud_cover_below_500ft,n05,Wolkenbedeckung unter 500 ft.,fraction,%,>=0,<=100
+cloud_cover_below_1000ft,n1,Niedrige Wolkenbedeckung (unter 2 km),fraction,%,>=0,<=100
+cloud_cover_below_7km,nlm,Wolkenbedeckung tiefe und mittelhohe Wolken unter 7000 m,fraction,%,>=0,<=100
+cloud_cover_between_2km_to_7km,nm,Mittelhohe Wolkenbedeckung (2-7 km),fraction,%,>=0,<=100
+cloud_cover_effective,neff,Effektive Wolkenbedeckung,fraction,%,>=0,<=100
+cloud_cover_total,n,Gesamtwolkenbedeckung,fraction,%,>=0,<=100
+precipitation_height_significant_weather_last_1h,rr1c,Gesamtniederschlag in der letzten Stunde-der mit signifikantem Wetter übereinstimmt,precipitation,kg/m²,>=0
+precipitation_height_significant_weather_last_3h,rr3c,Gesamtniederschlag in den letzten 3 Stunden-der mit signifikantem Wetter übereinstimmt,precipitation,kg/m²,>=0
+pressure_air_site_reduced,pppp,Oberflächendruck, reduziert,pressure,Pa,>=0
+probability_fog_last_1h,wwm,Wahrscheinlichkeit für Nebel in der letzten Stunde,fraction,%,>=0,<=100
+probability_fog_last_6h,wwm6,Wahrscheinlichkeit für Nebel in den letzten 6 Stunden,fraction,%,>=0,<=100
+probability_fog_last_12h,wwmh,Wahrscheinlichkeit für Nebel in den letzten 12 Stunden,fraction,%,>=0,<=100
+probability_precipitation_height_gt_0_0mm_last_12h,rh00,Wahrscheinlichkeit von Niederschlag > 0.0 mm in den letzten 12 Stunden,fraction,%,>=0,<=100
+probability_precipitation_height_gt_0_2mm_last_6h,r602,Wahrscheinlichkeit von Niederschlag > 0.2 mm in den letzten 6 Stunden,fraction,%,>=0,<=100
+probability_precipitation_height_gt_0_2mm_last_12h,rh02,Wahrscheinlichkeit von Niederschlag > 0.2 mm in den letzten 12 Stunden,fraction,%,>=0,<=100
+probability_precipitation_height_gt_0_2mm_last_24h,rd02,Wahrscheinlichkeit von Niederschlag > 0.2 mm in den letzten 24 Stunden,fraction,%,>=0,<=100
+probability_precipitation_height_gt_1mm_last_12h,rh10,Wahrscheinlichkeit von Niederschlag > 1.0 mm in den letzten 12 Stunden,fraction,%,>=0,<=100
+probability_precipitation_height_gt_5mm_last_6h,r650,Wahrscheinlichkeit von Niederschlag > 5.0 mm in den letzten 6 Stunden,fraction,%,>=0,<=100
+probability_precipitation_height_gt_5mm_last_12h,rh50,Wahrscheinlichkeit von Niederschlag > 5.0 mm in den letzten 12 Stunden,fraction,%,>=0,<=100
+probability_precipitation_height_gt_5mm_last_24h,rd50,Wahrscheinlichkeit von Niederschlag > 5.0 mm in den letzten 24 Stunden,fraction,%,>=0,<=100
+probability_wind_gust_ge_25kn_last_12h,fxh25,Wahrscheinlichkeit von Windböen >= 25 kn in den letzten 12 Stunden,fraction,%,>=0,<=100
+probability_wind_gust_ge_40kn_last_12h,fxh40,Wahrscheinlichkeit von Windböen >= 40 kn in den letzten 12 Stunden,fraction,%,>=0,<=100
+probability_wind_gust_ge_55kn_last_12h,fxh55,Wahrscheinlichkeit von Windböen >= 55 kn in den letzten 12 Stunden,fraction,%,>=0,<=100
+radiation_global,rad1h,Globale Strahlung,energy_per_area,kJ/m²,>=0
+sunshine_duration,sund1,Sonnenscheindauer in der letzten Stunde,time,s,>=0
+temperature_air_max_2m,tx,Maximale Temperatur - in den letzten 12 Stunden,temperature,K,-
+temperature_air_mean_0_05m,t5cm,Temperatur 5 cm über der Oberfläche,temperature,K,-
+temperature_air_mean_2m,ttt,Temperatur 2 m über der Oberfläche,temperature,K,-
+temperature_air_min_2m,tn,Minimale Temperatur - in den letzten 12 Stunden,temperature,K,-
+temperature_dew_point_mean_2m,td,Taupunkt 2 m über der Oberfläche,temperature,K,-
+visibility_range,vv,Sichtweite,length_medium,length_medium,>=0
+water_equivalent_snow_depth_new_last_1h,rrs1c,Schnee-Regen-Äquivalent in der letzten Stunde,precipitation,kg/m²,>=0
+water_equivalent_snow_depth_new_last_3h,rrs3c,Schnee-Regen-Äquivalent in den letzten 3 Stunden,precipitation,kg/m²,>=0
+weather_last_6h,w1w2,Vergangenes Wetter in den letzten 6 Stunden,dimensionless,-,-
+weather_significant,ww,Signifikantes Wetter,dimensionless,-,-
+wind_direction,dd,Windrichtung,angle,°,>=0,<=360
+wind_gust_max_last_1h,fx1,Maximale Windböe in der letzten Stunde,speed,m/s,>=0
+wind_gust_max_last_3h,fx3,Maximale Windböe in den letzten 3 Stunden,speed,m/s,>=0
+wind_gust_max_last_12h,fxh,Maximale Windböe in den letzten 12 Stunden,speed,m/s,>=0
+wind_speed,ff,Windgeschwindigkeit,speed,m/s,>=0

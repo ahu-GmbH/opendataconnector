@@ -1,0 +1,531 @@
+    1_minute
+
+        precipitation
+
+            precipitation_height
+
+            precipitation_height_droplet
+
+            precipitation_height_rocker
+
+            precipitation_index
+
+    5_minutes
+
+        precipitation
+
+            precipitation_index
+
+            precipitation_height
+
+            precipitation_height_droplet
+
+            precipitation_height_rocker
+
+    10_minutes
+
+        precipitation
+
+            precipitation_duration
+
+            precipitation_height
+
+            precipitation_index
+
+        solar
+
+            radiation_sky_short_wave_diffuse
+
+            radiation_global
+
+            sunshine_duration
+
+            radiation_sky_long_wave
+
+        temperature_air
+
+            pressure_air_site
+
+            temperature_air_mean_2m
+
+            temperature_air_mean_0_05m
+
+            humidity
+
+            temperature_dew_point_mean_2m
+
+        temperature_extreme
+
+            temperature_air_max_2m
+
+            temperature_air_max_0_05m
+
+            temperature_air_min_2m
+
+            temperature_air_min_0_05m
+
+        wind
+
+            wind_speed
+
+            wind_direction
+
+        wind_extreme
+
+            wind_gust_max
+
+            wind_speed_min
+
+            wind_speed_rolling_mean_max
+
+            wind_direction_gust_max
+
+    hourly
+
+        cloud_type
+
+            cloud_cover_total
+
+            cloud_cover_total_index
+
+            cloud_type_layer1
+
+            cloud_type_layer1_abbreviation
+
+            cloud_height_layer1
+
+            cloud_cover_layer1
+
+            cloud_type_layer2
+
+            cloud_type_layer2_abbreviation
+
+            cloud_height_layer2
+
+            cloud_cover_layer2
+
+            cloud_type_layer3
+
+            cloud_type_layer3_abbreviation
+
+            cloud_height_layer3
+
+            cloud_cover_layer3
+
+            cloud_type_layer4
+
+            cloud_type_layer4_abbreviation
+
+            cloud_height_layer4
+
+            cloud_cover_layer4
+
+        cloudiness
+
+            cloud_cover_total_index
+
+            cloud_cover_total
+
+        dew_point
+
+            temperature_air_mean_2m
+
+            temperature_dew_point_mean_2m
+
+        moisture
+
+            humidity_absolute
+
+            pressure_vapor
+
+            temperature_wet_mean_2m
+
+            pressure_air_site
+
+            temperature_air_mean_2m
+
+            humidity
+
+            temperature_dew_point_mean_2m
+
+        precipitation
+
+            precipitation_height
+
+            precipitation_index
+
+            precipitation_form
+
+        pressure
+
+            pressure_air_sea_level
+
+            pressure_air_site
+
+        solar
+
+            end_of_interval
+
+            radiation_sky_long_wave
+
+            radiation_sky_short_wave_diffuse
+
+            radiation_global
+
+            sunshine_duration
+
+            sun_zenith_angle
+
+            true_local_time
+
+        sun
+
+            sunshine_duration
+
+        temperature_air
+
+            temperature_air_mean_2m
+
+            humidity
+
+        temperature_soil
+
+            temperature_soil_mean_0_02m
+
+            temperature_soil_mean_0_05m
+
+            temperature_soil_mean_0_1m
+
+            temperature_soil_mean_0_2m
+
+            temperature_soil_mean_0_5m
+
+            temperature_soil_mean_1m
+
+        visibility
+
+            visibility_range_index
+
+            visibility_range
+
+        weather_phenomena
+
+            weather
+
+            weather_text
+
+        wind
+
+            wind_speed
+
+            wind_direction
+
+        wind_extreme
+
+            wind_gust_max
+
+        wind_synoptic
+
+            wind_speed
+
+            wind_direction
+
+        urban_precipitation
+
+            precipitation_height
+
+        urban_pressure
+
+            pressure_air_sea_level
+
+            pressure_air_site
+
+        urban_sun
+
+            sunshine_duration
+
+        urban_temperature_air
+
+            temperature_air_mean_2m
+
+            humidity
+
+        urban_temperature_soil
+
+            temperature_soil_mean_0_05m
+
+            temperature_soil_mean_0_1m
+
+            temperature_soil_mean_0_2m
+
+            temperature_soil_mean_0_5m
+
+            temperature_soil_mean_1m
+
+        urban_wind
+
+            wind_speed
+
+            wind_direction
+
+    subdaily
+
+        cloudiness
+
+            cloud_cover_total
+
+            cloud_density
+
+        moisture
+
+            pressure_vapor
+
+            temperature_air_mean_0_05m
+
+            temperature_air_mean_2m
+
+            humidity
+
+        pressure
+
+            pressure_air_site
+
+        soil
+
+            temperature_soil_mean_0_05m
+
+        temperature_air
+
+            temperature_air_mean_2m
+
+            humidity
+
+        visibility
+
+            visibility_range
+
+        wind
+
+            wind_direction
+
+            wind_force_beaufort
+
+        wind_extreme
+
+            wind_gust_max_last_3h
+
+            wind_gust_max_last_6h
+
+    daily
+
+        climate_summary
+
+            wind_gust_max
+
+            wind_speed
+
+            precipitation_height
+
+            precipitation_form
+
+            sunshine_duration
+
+            snow_depth
+
+            cloud_cover_total
+
+            pressure_vapor
+
+            pressure_air_site
+
+            temperature_air_mean_2m
+
+            humidity
+
+            temperature_air_max_2m
+
+            temperature_air_min_2m
+
+            temperature_air_min_0_05m
+
+        precipitation_more
+
+            precipitation_height
+
+            precipitation_form
+
+            snow_depth
+
+            snow_depth_new
+
+        solar
+
+            radiation_sky_long_wave
+
+            radiation_sky_short_wave_diffuse
+
+            radiation_global
+
+            sunshine_duration
+
+        temperature_soil
+
+            temperature_soil_mean_0_02m
+
+            temperature_soil_mean_0_05m
+
+            temperature_soil_mean_0_1m
+
+            temperature_soil_mean_0_2m
+
+            temperature_soil_mean_0_5m
+
+            temperature_soil_mean_1m
+
+        water_equivalent
+
+            snow_depth_excelled
+
+            snow_depth
+
+            water_equivalent_snow_depth
+
+            water_equivalent_snow_depth_excelled
+
+        weather_phenomena
+
+            count_weather_type_fog
+
+            count_weather_type_thunder
+
+            count_weather_type_storm_strong_wind
+
+            count_weather_type_storm_stormier_wind
+
+            count_weather_type_dew
+
+            count_weather_type_glaze
+
+            count_weather_type_ripe
+
+            count_weather_type_sleet
+
+            count_weather_type_hail
+
+        weather_phenomena_more
+
+            count_weather_type_sleet
+
+            count_weather_type_hail
+
+            count_weather_type_fog
+
+            count_weather_type_thunder
+
+    monthly
+
+        climate_summary
+
+            cloud_cover_total
+
+            temperature_air_mean_2m
+
+            temperature_air_max_2m_mean
+
+            temperature_air_min_2m_mean
+
+            sunshine_duration
+
+            wind_force_beaufort
+
+            temperature_air_max_2m
+
+            wind_gust_max
+
+            temperature_air_min_2m
+
+            precipitation_height
+
+            precipitation_height_max
+
+        precipitation_more
+
+            snow_depth_new
+
+            precipitation_height
+
+            snow_depth
+
+            precipitation_height_max
+
+        weather_phenomena
+
+            count_weather_type_storm_strong_wind
+
+            count_weather_type_storm_stormier_wind
+
+            count_weather_type_thunder
+
+            count_weather_type_glaze
+
+            count_weather_type_sleet
+
+            count_weather_type_hail
+
+            count_weather_type_fog
+
+            count_weather_type_dew
+
+    annual
+
+        climate_summary
+
+            cloud_cover_total
+
+            temperature_air_mean_2m
+
+            temperature_air_max_2m_mean
+
+            temperature_air_min_2m_mean
+
+            sunshine_duration
+
+            wind_force_beaufort
+
+            temperature_air_max_2m
+
+            wind_gust_max
+
+            temperature_air_min_2m
+
+            precipitation_height
+
+            precipitation_height_max
+
+        precipitation_more
+
+            snow_depth_new
+
+            precipitation_height
+
+            snow_depth
+
+            precipitation_height_max
+
+        weather_phenomena
+
+            count_weather_type_storm_strong_wind
+
+            count_weather_type_storm_stormier_wind
+
+            count_weather_type_thunder
+
+            count_weather_type_glaze
+
+            count_weather_type_sleet
+
+            count_weather_type_hail
+
+            count_weather_type_fog
+
+            count_weather_type_dew

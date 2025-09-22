@@ -1,0 +1,172 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+	xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+	<changeSet author="ng (generated)" id="1743435452264-1">
+		<createTable tableName="abonnement">
+			<column name="id" type="VARCHAR(32)">
+				<constraints nullable="false" primaryKey="true"
+					primaryKeyName="abonnementPK" />
+			</column>
+			<column name="description" type="TEXT" />
+			<column name="label" type="VARCHAR(255)">
+				<constraints nullable="false" />
+			</column>
+			<column name="base_url" type="VARCHAR(255)" />
+			<column name="file_format" type="VARCHAR(255)" />
+			<column name="end_datum" type="date" />
+			<column name="location_id" type="VARCHAR(255)" />
+			<column name="parameter" type="VARCHAR(255)" />
+			<column name="start_datum" type="date" />
+			<column name="sub_url" type="VARCHAR(255)" />
+		</createTable>
+	</changeSet>
+
+	<changeSet author="ng (generated)" id="1743665650124-1">
+		<addColumn tableName="abonnement">
+			<column name="last_updated" type="date" />
+		</addColumn>
+	</changeSet>
+
+
+	<changeSet author="ng (generated)" id="1743777125814-1">
+		<createTable tableName="open_geodata">
+			<column name="id" type="VARCHAR(32)">
+				<constraints nullable="false" primaryKey="true"
+					primaryKeyName="open_geodataPK" />
+			</column>
+			<column name="description" type="TEXT" />
+			<column name="label" type="VARCHAR(255)">
+				<constraints nullable="false" />
+			</column>
+			<column name="last_updated" type="date" />
+			<column name="base_url" type="VARCHAR(255)" />
+			<column name="columns" type="JSONB" />
+			<column name="format" type="VARCHAR(255)" />
+			<column name="headers" type="JSONB" />
+			<column name="relevante_files" type="JSONB" />
+		</createTable>
+	</changeSet>
+	    <changeSet author="ng (generated)" id="1744612805644-1">
+        <createTable tableName="csv_configurations">
+            <column name="id" type="VARCHAR(32)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="csv_configurationsPK"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="label" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_updated" type="date"/>
+            <column name="base_url" type="VARCHAR(255)"/>
+            <column name="config_key" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="file_pattern" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="role_type" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ng (generated)" id="1744612805644-2">
+        <createTable tableName="csv_header_mappings">
+            <column name="id" type="VARCHAR(32)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="csv_header_mappingsPK"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="label" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_updated" type="date"/>
+            <column name="base_url" type="VARCHAR(255)"/>
+            <column name="fixed_value" type="VARCHAR(100)"/>
+            <column name="source_header" type="VARCHAR(100)"/>
+            <column name="target_header" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="config_id" type="VARCHAR(32)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ng (generated)" id="1744612805644-3">
+        <addUniqueConstraint columnNames="config_key" constraintName="UC_CSV_CONFIGURATIONSCONFIG_KEY_COL" tableName="csv_configurations"/>
+    </changeSet>
+    <changeSet author="ng (generated)" id="1744612805644-4">
+        <addForeignKeyConstraint baseColumnNames="config_id" baseTableName="csv_header_mappings" constraintName="FK2hgrwxb5ebnnc5hi71n260jmh" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="csv_configurations" validate="true"/>
+    </changeSet>
+    
+   <!--  Csv_Configurations update -->
+     <changeSet author="ng (generated)" id="1744873555094-1">
+        <addUniqueConstraint columnNames="file_pattern" constraintName="UC_CSV_CONFIGURATIONSFILE_PATTERN_COL" tableName="csv_configurations"/>
+    </changeSet>
+    <changeSet author="ng (generated)" id="1744873555094-2">
+        <dropUniqueConstraint constraintName="uc_csv_configurationsconfig_key_col" tableName="csv_configurations"/>
+    </changeSet>
+    <changeSet author="ng (generated)" id="1744873555094-3">
+        <dropColumn columnName="config_key" tableName="csv_configurations"/>
+    </changeSet>
+    
+    
+    <changeSet author="ng (generated)" id="1745329006853-1">
+        <createTable tableName="lokation">
+            <column name="id" type="VARCHAR(32)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="lokationPK"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="label" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_updated" type="date"/>
+            <column name="base_url" type="VARCHAR(255)"/>
+            <column name="end_date" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="latitude" type="FLOAT(53)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="longitude" type="FLOAT(53)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="start_date" type="TIMESTAMP(6) WITHOUT TIME ZONE"/>
+            <column name="stationId" type="VARCHAR(255)"/>
+            <column name="provider_id" type="VARCHAR(32)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="ng (generated)" id="1745329006853-2">
+        <createTable tableName="provider">
+            <column name="id" type="VARCHAR(32)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="providerPK"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="label" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_updated" type="date"/>
+            <column name="base_url" type="VARCHAR(255)"/>
+            <column name="historisch" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="vorhersage" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="ng (generated)" id="1745329006853-3">
+        <addForeignKeyConstraint baseColumnNames="provider_id" baseTableName="lokation" constraintName="FKtkj6t25fmqfhdo8g7uxqjyyux" deferrable="false" initiallyDeferred="false" referencedColumnNames="id" referencedTableName="provider" validate="true"/>
+    </changeSet>
+    
+        <changeSet author="ng (generated)" id="1745333699357-1">
+        <addColumn tableName="lokation">
+            <column name="station_id" type="varchar(255)"/>
+        </addColumn>
+    </changeSet>
+    <changeSet author="ng (generated)" id="1745333699357-2">
+        <dropColumn columnName="stationId" tableName="lokation"/>
+    </changeSet>
+
+</databaseChangeLog>
+	

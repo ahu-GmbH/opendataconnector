@@ -1,0 +1,67 @@
+{"properties": [
+  {
+    "name": "wetterdienst.url",
+    "type": "java.lang.String",
+    "description": "A description for 'wetterdienst.url'"
+  },
+  {
+    "name": "pegeldienst.url",
+    "type": "java.lang.String",
+    "description": "A description for 'pegeldienst.url'"
+  },
+  {
+    "name": "opengeodata-wasser.url",
+    "type": "java.lang.String",
+    "description": "A description for 'opengeodata-wasser.url'"
+  },
+  {
+    "name": "geodatenkatalog.url",
+    "type": "java.lang.String",
+    "description": "A description for 'geodatenkatalog.url'"
+  },
+  {
+    "name": "govdata.url",
+    "type": "java.lang.String",
+    "description": "A description for 'govdata.url'"
+  },
+  {
+    "name": "proxy.host",
+    "type": "java.lang.String",
+    "description": "A description for 'proxy.host'"
+  },
+  {
+    "name": "proxy.port",
+    "type": "java.lang.String",
+    "description": "A description for 'proxy.port'"
+  },
+  {
+    "name": "opengeodata.url",
+    "type": "java.lang.String",
+    "description": "A description for 'opengeodata.url'"
+  },
+  {
+    "name": "wetterdienst-mosmix.url",
+    "type": "java.lang.String",
+    "description": "A description for 'wetterdienst-mosmix.url'"
+  },
+  {
+    "name": "wetterdienst-observation.url",
+    "type": "java.lang.String",
+    "description": "A description for 'wetterdienst-observation.url'"
+  },
+  {
+    "name": "opengeodata-ow.url",
+    "type": "java.lang.String",
+    "description": "A description for 'opengeodata-ow.url'"
+  },
+  {
+    "name": "opengeodata-gw.url",
+    "type": "java.lang.String",
+    "description": "A description for 'opengeodata-gw.url'"
+  }
+]}{
+    "name": "opengeodata-gw.url",
+    "type": "java.lang.String",
+    "description": "A description for 'opengeodata-gw.url'"
+  }
+]}

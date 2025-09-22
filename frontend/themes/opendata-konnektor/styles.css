@@ -1,0 +1,51 @@
+.bounding-box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.bounding-box {
+    position: relative;
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Match width for a square */
+    border: 2px solid #666; /* Square border */
+}
+
+.corner-label {
+    position: absolute;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.north-east {
+    top: -15px;
+    right: -15px;
+}
+
+.south-east {
+    bottom: -15px;
+    right: -15px;
+}
+
+.south-west {
+    bottom: -15px;
+    left: -15px;
+}
+
+.north-west {
+    top: -15px;
+    left: -15px;
+}
+
+/* Optional: Add dots at corners (using ::after or ::before) */
+.corner-label::after {
+    content: "●"; /* Unicode for a dot */
+    color: #666;
+    font-size: 0.8em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

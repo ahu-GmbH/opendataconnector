@@ -1,0 +1,43 @@
+name,original_name,description,unit_type,unit,constraints
+cloud_base_convective,h_bsc,Cloud base of convective clouds,length_medium,m,>=0
+cloud_cover_above_7km,nh,High cloud cover (>7 km),fraction,%,>=0,<=100
+cloud_cover_below_500ft,n05,Cloud cover below 500 ft.,fraction,%,>=0,<=100
+cloud_cover_below_1000ft,n1,Low cloud cover (lower than 2 km),fraction,%,>=0,<=100
+cloud_cover_below_7km,nlm,Cloud cover low and mid level clouds below 7000 m,fraction,%,>=0,<=100
+cloud_cover_between_2km_to_7km,nm,Midlevel cloud cover (2-7 km),fraction,%,>=0,<=100
+cloud_cover_effective,neff,Effective cloud cover,fraction,%,>=0,<=100
+cloud_cover_total,n,Total cloud cover,fraction,%,>=0,<=100
+precipitation_height_significant_weather_last_1h,rr1c,Total precipitation during the last hour consistent with significant weather,precipitation,kg/m²,>=0
+precipitation_height_significant_weather_last_3h,rr3c,Total precipitation during the last 3 hours consistent with significant weather,precipitation,kg/m²,>=0
+pressure_air_site_reduced,pppp,Surface pressure, reduced,pressure,Pa,>=0
+probability_fog_last_1h,wwm,Probability for fog within the last hour,fraction,%,>=0,<=100
+probability_fog_last_6h,wwm6,Probability for fog within the last 6 hours,fraction,%,>=0,<=100
+probability_fog_last_12h,wwmh,Probability for fog within the last 12 hours,fraction,%,>=0,<=100
+probability_precipitation_height_gt_0_0mm_last_12h,rh00,Probability of precipitation > 0.0mm during the last 12 hours,fraction,%,>=0,<=100
+probability_precipitation_height_gt_0_2mm_last_6h,r602,Probability of precipitation > 0.2mm during the last 6 hours,fraction,%,>=0,<=100
+probability_precipitation_height_gt_0_2mm_last_12h,rh02,Probability of precipitation > 0.2mm during the last 12 hours,fraction,%,>=0,<=100
+probability_precipitation_height_gt_0_2mm_last_24h,rd02,Probability of precipitation > 0.2mm during the last 24 hours,fraction,%,>=0,<=100
+probability_precipitation_height_gt_1mm_last_12h,rh10,Probability of precipitation > 1.0mm during the last 12 hours,fraction,%,>=0,<=100
+probability_precipitation_height_gt_5mm_last_6h,r650,Probability of precipitation > 5.0mm during the last 6 hours,fraction,%,>=0,<=100
+probability_precipitation_height_gt_5mm_last_12h,rh50,Probability of precipitation > 5.0mm during the last 12 hours,fraction,%,>=0,<=100
+probability_precipitation_height_gt_5mm_last_24h,rd50,Probability of precipitation > 5.0mm during the last 24 hours,fraction,%,>=0,<=100
+probability_wind_gust_ge_25kn_last_12h,fxh25,Probability of wind gusts >= 25kn within the last 12 hours,fraction,%,>=0,<=100
+probability_wind_gust_ge_40kn_last_12h,fxh40,Probability of wind gusts >= 40kn within the last 12 hours,fraction,%,>=0,<=100
+probability_wind_gust_ge_55kn_last_12h,fxh55,Probability of wind gusts >= 55kn within the last 12 hours,fraction,%,>=0,<=100
+radiation_global,rad1h,Global Irradiance,energy_per_area,kJ/m²,>=0
+sunshine_duration,sund1,Sunshine duration during the last Hour,time,s,>=0
+temperature_air_max_2m,tx,Maximum temperature - within the last 12 hours,temperature,K,-
+temperature_air_mean_0_05m,t5cm,Temperature 5cm above surface,temperature,K,-
+temperature_air_mean_2m,ttt,Temperature 2m above surface,temperature,K,-
+temperature_air_min_2m,tn,Minimum temperature - within the last 12 hours,temperature,K,-
+temperature_dew_point_mean_2m,td,Dewpoint 2m above surface,temperature,K,-
+visibility_range,vv,Visibility,length_medium,length_medium,>=0
+water_equivalent_snow_depth_new_last_1h,rrs1c,Snow-Rain-Equivalent during the last hour,precipitation,kg/m²,>=0
+water_equivalent_snow_depth_new_last_3h,rrs3c,Snow-Rain-Equivalent during the last 3 hours,precipitation,kg/m²,>=0
+weather_last_6h,w1w2,Past weather during the last 6 hours,dimensionless,-,-
+weather_significant,ww,Significant Weather,dimensionless,-,-
+wind_direction,dd,Wind direction,angle,°,>=0,<=360
+wind_gust_max_last_1h,fx1,Maximum wind gust within the last hour,speed,m/s,>=0
+wind_gust_max_last_3h,fx3,Maximum wind gust within the last 3 hours,speed,m/s,>=0
+wind_gust_max_last_12h,fxh,Maximum wind gust within the last 12 hours,speed,m/s,>=0
+wind_speed,ff,Wind speed,speed,m/s,>=0

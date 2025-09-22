@@ -1,0 +1,27 @@
+/* Custom media queries for the dialog */
+@media (max-width: 600px) {
+    /* For small screens, reduce the dialog size */
+    .responsive-dialog {
+        width: 80vw !important;
+        height: 1000vh !important;
+        max-height: 100vh !important; 
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    /* For medium screens, use medium sizes */
+    .responsive-dialog {
+        width: 70vw !important;
+        height: 100vh !important;
+        max-height: 100vh !important; 
+    }
+}
+
+@media (min-width: 1201px) {
+    /* For large screens, use larger sizes */
+    .responsive-dialog {
+        width: 60vw !important;
+        height: 100vh !important;
+        max-height: 100vh !important; 
+    }
+}
